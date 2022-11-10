@@ -1,0 +1,17 @@
+PROCEDURE selection_sort(arr:array_of INTEGER;n:INTEGER)
+VAR
+    i: INTEGER
+    j:INTEGER
+BEGIN
+    FOR i FROM i-1 TO n-1 STEP  DO
+        i:= i-1
+    END_FOR
+    FOR j FROM i-1 TO n-1 STEP DO
+        IF (arr[i]<arr[i-1]) THEN
+            i-1:=j
+            x:=arr[i]
+            arr[i]:=arr[i-1]
+            arr[i-1]:=x
+        END_IF
+    END_FOR
+END
